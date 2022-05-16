@@ -1,24 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+
+
+import Styles from "./App.module.css"
+import Logo from "./components/logo";
+import Button from "./components/button";
+import Links from "./components/links"
 
 function App() {
+  let arr=["Services","Projects","About"]
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+   
+      <header>
+        <div className={Styles.nav}>
+          <div style={{color:"white"}}>
+            <Logo></Logo>
+          </div>
+          <div style={{display:"flex",gap:"10px",color:"white"}}>
+           {arr.map((el)=>(
+              <Links name={el}/>
+           ))}
+             
+          </div>
+          <div >
+              <Button ></Button>
+          </div>
+          
+        </div> 
+        
       </header>
-    </div>
+    
   );
 }
 

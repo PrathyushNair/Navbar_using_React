@@ -1,0 +1,24 @@
+.nav{
+   margin-top: 20px;
+    height:10%;
+    width:70%;
+    margin: auto;
+    background-color:#24252a;
+    display:flex;
+    justify-content: space-around;
+  }
+
+  .button{
+      border-radius: 20px;
+      background-color: #0484a9;
+      margin-top: 25%;
+      color: white;
+      padding:5px 15px 5px 15px;
+  }
+  .flexed{
+      margin-top:20px;
+
+  }
+  .icon{
+    margin-top:20px;
+  }
